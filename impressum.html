@@ -4,119 +4,141 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impressum</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body>
-    <header class="header-speisekarte">
-      <nav class="navBar">
-        <a href="index.html" target="_self" class="section-link nav-link"
-          ><span>home</span></a
+  <body class="px-2 xl:max-w-350 xl:mx-auto">
+    <header
+      class="flex justify-center border border-border bg-card-item text-text-nav w-full"
+    >
+      <nav
+        class="navBar w-full flex justify-between text-center text-md md:text-lg md:justify-evenly lg:max-w-250 lg:text-xl"
+      >
+        <a href="index.html" class="p-5 hover:text-primary"
+          ><span>Home</span></a
         >
-        <a
-          href="index.html#aboutUs"
-          target="_self"
-          class="section-link nav-link"
-          ><span>über Uns</span></a
+        <a href="speisekarte.html" target="_self" class="p-5 hover:text-primary"
+          ><span>Speise<wbr />karte</span></a
         >
-
-        <a
-          href="index.html#openings"
-          target="_self"
-          class="section-link nav-link"
+        <a href="index.html#openings" class="p-5 hover:text-primary"
           ><span>Öffnungs<wbr />zeiten</span></a
         >
       </nav>
     </header>
-    <main>
+
+    <main class="px-15 flex flex-col gap-5">
       <section class="heroSection">
-        <div class="heroWrapper">
-          <div class="heroMain">
-            <h1 class="heroHeadline">
+        <div class="h-80 bg-head-img bg-center bg-cover">
+          <div
+            class="flex flex-col w-full h-full justify-center items-center text-center pb-20 text-text-nav"
+          >
+            <h1 class="heroHeadline text-6xl lg:text-7xl">
               Impressum <br />
               0511Bites
             </h1>
           </div>
         </div>
       </section>
-      <section class="sectionWrapper impressum">
-        <div class="impressum-content-container">
-          <h2 class="section-headline">Anbieter</h2>
-          <p class="section-paragraph">SilentCrouwd</p>
-          <p class="section-paragraph">Beispielstrasse 12</p>
-          <p class="section-paragraph">31258 Beispieldorf</p>
+      <section class="impressum">
+        <div class="grid grid-cols-2">
+          <div>
+            <h2 class="text-3xl py-3 underline decoration-primary md:text-4xl">
+              Anbieter
+            </h2>
+            <p class="">SilentCrouwd</p>
+            <p class="section-paragraph">Beispielstrasse 12</p>
+            <p class="section-paragraph">31258 Beispieldorf</p>
 
-          <h2 class="section-headline">Kontakt</h2>
+            <h2 class="section-headline">Kontakt</h2>
 
-          <p class="section-paragraph">Loremlorem@gmail.com</p>
-          <p class="section-paragraph">(+49) 14569787</p>
+            <p class="section-paragraph">Loremlorem@gmail.com</p>
+            <p class="section-paragraph">(+49) 14569787</p>
 
-          <h2 class="section-headline">Umsatzsteuer-ID:</h2>
-          <p class="section-paragraph">
-            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-            DE123456789
-          </p>
-
-          <h2 class="section-headline">Redaktionell verantwortlich:</h2>
-          <p class="section-paragraph">SilentCrouwd</p>
-          <p class="section-paragraph">Beispielstrasse 12</p>
-          <p class="section-paragraph">31258 Beispieldorf</p>
-          <h2 class="section-headline">EU-Streitschlichtung:</h2>
-          <p class="section-paragraph">
-            Die Europäische Kommission stellt eine Plattform zur
-            Online-Streitbeilegung (OS) bereit:
-            <a href="//ec.europa.eu/consumers/odr/"
-              >/ec.europa.eu/consumers/odr/</a
-            >. Unsere E-Mail-Adresse finden Sie oben im Impressum.
-          </p>
+            <h2 class="section-headline">Umsatzsteuer-ID:</h2>
+            <p class="section-paragraph">
+              Umsatzsteuer-Identifikationsnummer gemäß § 27 a
+              Umsatzsteuergesetz: DE123456789
+            </p>
+          </div>
+          <div>
+            <h2 class="text-3xl py-3 underline decoration-primary md:text-4xl">
+              Redaktionelles
+            </h2>
+            <p class="section-paragraph">SilentCrouwd</p>
+            <p class="section-paragraph">Beispielstrasse 12</p>
+            <p class="section-paragraph">31258 Beispieldorf</p>
+            <h2 class="section-headline">EU-Streitschlichtung:</h2>
+            <p class="section-paragraph">
+              Die Europäische Kommission stellt eine Plattform zur
+              Online-Streitbeilegung (OS) bereit:
+              <a href="//ec.europa.eu/consumers/odr/"
+                >/ec.europa.eu/consumers/odr/</a
+              >. Unsere E-Mail-Adresse finden Sie oben im Impressum.
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="datenschutzerklärung" class="sectionWrapper">
-        <div class="datenschutz-content-container">
-          <h1 class="heroHeadline datenschutz-headline">
-            Datenschutzerklärung
-          </h1>
-          <h2 class="section-headline">Datenschutz auf einen Blick</h2>
-          <p class="section-paragraph">
-            Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen
-            Überblick darüber, was mit Ihren personenbezogenen Daten passiert,
-            wenn Sie diese Website besuchen.
-          </p>
-
-          <h2 class="section-headline">Datenerfassung Website</h2>
-          <p class="section-paragraph">
-            Wer ist verantwortlich für die Datenerfassung? Die Datenverarbeitung
-            auf dieser Website erfolgt durch den Websitebetreiber (siehe
-            Impressum). Wie erfassen wir Ihre Daten? Ihre Daten werden zum einen
-            dadurch erhoben, dass Sie uns diese mitteilen (z. B. durch ein
-            Kontaktformular). Andere Daten werden automatisch beim Besuch der
-            Website durch unsere IT-Systeme erfasst (z. B. Internetbrowser,
-            Betriebssystem oder Uhrzeit des Seitenaufrufs).
-          </p>
-          <h2 class="section-headline">Ihre Rechte</h2>
-          <p class="section-paragraph">
-            Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft,
-            Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu
-            erhalten. Sie haben außerdem ein Recht, die Berichtigung oder
-            Löschung dieser Daten zu verlangen.
-          </p>
+        <div class="text-md grid grid-cols-1 lg:grid-cols-2">
+          <div>
+            <h1 class="text-3xl py-3 underline decoration-primary md:text-4xl">
+              Datenschutzerklärung
+            </h1>
+            <h2 class="section-headline">Datenschutz auf einen Blick</h2>
+            <p class="section-paragraph">
+              Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen
+              Überblick darüber, was mit Ihren personenbezogenen Daten passiert,
+              wenn Sie diese Website besuchen.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-3xl py-3 underline decoration-primary md:text-4xl">
+              Datenerfassung Website
+            </h2>
+            <p class="section-paragraph">
+              Wer ist verantwortlich für die Datenerfassung? Die
+              Datenverarbeitung auf dieser Website erfolgt durch den
+              Websitebetreiber (siehe Impressum). Wie erfassen wir Ihre Daten?
+              Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese
+              mitteilen (z. B. durch ein Kontaktformular). Andere Daten werden
+              automatisch beim Besuch der Website durch unsere IT-Systeme
+              erfasst (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des
+              Seitenaufrufs).
+            </p>
+          </div>
+          <div>
+            <h2 class="text-3xl py-3 underline decoration-primary md:text-4xl">
+              Ihre Rechte
+            </h2>
+            <p class="section-paragraph">
+              Sie haben jederzeit das Recht, unentgeltlich Auskunft über
+              Herkunft, Empfänger und Zweck Ihrer gespeicherten
+              personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht,
+              die Berichtigung oder Löschung dieser Daten zu verlangen.
+            </p>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="sectionWrapper footter-wrapper">
-        <div class="footer-links-container">
+    <footer class="bg-card-item h-30 mt-5">
+      <div
+        class="flex flex-col w-full h-full justify-center md:mx-auto md:text-lg lg:max-w-250 lg:text-xl"
+      >
+        <div class="flex justify-evenly text-text-nav">
           <a
-            class="section-link footer-links"
-            href="#datenschutzerklärung"
+            class="md:w-25 hover:text-primary hover:transition"
+            href="impressum.html"
+            target="_self"
+            >Impressum</a
+          >
+          <a
+            class="md:w-25 hover:text-primary hover:transition"
+            href="impressum.html#datenschutzerklärung"
             target="_self"
             >Datenschutzerklärung</a
           >
-          <a class="section-link footer-links" href="jobs.html" target="_self">
-            Jobs</a
-          >
         </div>
-        <p class="section-paragraph">&copy; 0511 0511Bites</p>
+        <p class="mt-5 mx-auto text-text-muted">&copy; Cb_codes_design</p>
       </div>
     </footer>
   </body>

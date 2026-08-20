@@ -17,13 +17,13 @@
   @media (prefers-color-scheme: dark) {
     --color-bg-primary: #0f172a;
     --color-bg-card: #1e293b;
-    --color-primary: blue;
+    --color-primary: rgb(134, 15, 45);
     --color-secondary: violet;
     --color-text-main: #f8fafc;
     --color-text-nav: #f1f2f5;
     --color-text-muted: #94a3b8;
     --color-border: #334155;
-    --color-card-item: gray;
+    --color-card-item: rgb(31, 30, 30);
   }
 }
 

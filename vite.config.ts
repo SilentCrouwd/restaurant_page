@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: new URL("./index.html", import.meta.url).pathname,
         impressum: new URL("./impressum.html", import.meta.url).pathname,
+        speisekarte: new URL("./speisekarte.html", import.meta.url).pathname,
       },
     },
   },
