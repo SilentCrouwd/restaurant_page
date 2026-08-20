@@ -1,9 +1,110 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speisekarte</title>
+
+    <!-- Haupt-Meta-Daten -->
+    <title>Speisekarte | Bistro 0511Bites Hannover</title>
+    <meta
+      name="description"
+      content="Entdecke die Speisekarte von Bistro 0511Bites: Frische Bio-Vorspeisen, hausgemachte Pasta, zartes Rinderfilet und vegane Highlights in Hannover."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://deine-domain.de/speisekarte.html" />
+
+    <!-- Open Graph / WhatsApp Preview -->
+    <meta property="og:type" content="restaurant.menu" />
+    <meta
+      property="og:url"
+      content="https://deine-domain.de/speisekarte.html"
+    />
+    <meta property="og:title" content="Speisekarte | Bistro 0511Bites" />
+    <meta
+      property="og:description"
+      content="100% Bio-Qualität: Schmökere in unseren Vorspeisen und Hauptgängen. Wir freuen uns auf deinen Besuch!"
+    />
+    <meta
+      property="og:image"
+      content="https://deine-domain.de/src/assets/img/rotebeete.webp"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Speisekarte | Bistro 0511Bites" />
+    <meta
+      name="twitter:description"
+      content="100% Bio-Qualität: Schmökere in unseren Vorspeisen und Hauptgängen."
+    />
+    <meta
+      name="twitter:image"
+      content="https://deine-domain.de/src/assets/img/rotebeete.webp"
+    />
+
+    <!-- Strukturierte Daten (Schema.org Speisekarte) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "Speisekarte Bistro 0511Bites",
+        "mainEntityOfPage": "https://deine-domain.de/speisekarte.html",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Vorspeisen",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Rote-Bete-Carpaccio mit Walnüssen",
+                "description": "Hauchdünn aufgeschnittene, gekochte Bio-Rote-Bete, mariniert mit Olivenöl, Balsamico, gerösteten Walnüssen und Feldsalat.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "12.50",
+                  "priceCurrency": "EUR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Cremige Kürbis-Ingwer-Suppe",
+                "description": "Samtige Suppe aus geröstetem Hokkaido-Kürbis mit Ingwer, Kürbiskernöl und Croutons.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "8.50",
+                  "priceCurrency": "EUR"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Hauptgänge",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Rosa gebratenes Rinderfilet",
+                "description": "Zartes Rinderfiletsteak an Kräuterbutter mit getrüffeltem Kartoffelpüree und Grillgemüse.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "28.50",
+                  "priceCurrency": "EUR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Veganer Süßkartoffel-Linsen-Burger",
+                "description": "Hausgemachtes Patty im Dinkel-Bun mit Avocado-Creme, Rucola, getrockneten Tomaten und Süßkartoffel-Pommes.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "17.50",
+                  "priceCurrency": "EUR"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body class="bg-bg-primary px-2 xl:xl:max-w-350 xl:mx-auto">
