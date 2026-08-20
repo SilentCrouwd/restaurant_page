@@ -1,1 +1,1 @@
-import "./index.css"; // Oder wie deine CSS-Datei heißt
+import "./style.css"; // Oder wie deine CSS-Datei heißt
