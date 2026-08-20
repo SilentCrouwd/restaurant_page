@@ -7,8 +7,162 @@
     <title>restaurant_page</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body>
-    <div class="text-yellow-900">Hallo welt</div>
+  <body class="bg-bg-primary">
+    <header
+      class="flex justify-center border border-border bg-card-item text-text-nav w-full"
+    >
+      <nav
+        class="w-full navBar flex justify-between text-center text-md md:text-lg md:justify-evenly lg:max-w-250 lg:text-xl"
+      >
+        <a href="#aboutUs" class="p-5 hover:text-primary"
+          ><span>Über Uns</span></a
+        >
+        <a href="speisekarte.html" target="_self" class="p-5 hover:text-primary"
+          ><span>Speise<wbr />karte</span></a
+        >
+        <a href="#openings" class="p-5 hover:text-primary"
+          ><span>Öffnungs<wbr />zeiten</span></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="heroSection">
+        <div class="h-screen bg-head-img bg-center bg-cover">
+          <div
+            class="flex flex-col w-full h-full justify-center items-center text-center pb-20 text-text-nav"
+          >
+            <h1 class="heroHeadline text-7xl lg:text-8xl">
+              Bistro <br />
+              0511Bites
+            </h1>
+
+            <p class="heroSecLine text-lg lg:text-xl">
+              Restaurant mit 100% Bio Qualität
+            </p>
+            <a
+              class="sectionBtn border border-transparent mt-10 rounded-lg p-3 bg-primary text-lg lg:text-xl hover:bg-transparent hover:border-primary hover:text-primary hover:transition"
+              href="#openings"
+              >Öffnungszeiten</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="aboutUs" class="lg:max-w-250 lg:mx-auto">
+        <div class="flex flex-col text-text-main lg:flex-row lg:items-center">
+          <div class="section-content-left">
+            <h2
+              class="text-3xl py-3 underline decoration-primary md:text-4xl lg:text-5xl"
+            >
+              Über Uns
+            </h2>
+            <p class="text-md py-5 mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              recusandae, repudiandae tempora, laborum atque obcaecati numquam
+              provident tenetur vero minima dolore, quae officia fugit neque
+              aspernatur nisi et eveniet incidunt! <br />Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Quisquam repudiandae commodi
+              velit architecto voluptas natus quis dolorum libero. In doloribus
+              sit consectetur voluptatem iusto perspiciatis voluptatibus.
+              Numquam nulla amet ex?
+            </p>
+            <a
+              href="speisekarte.html"
+              target="_self"
+              class="border border-transparent mt-10 rounded-lg p-3 bg-primary text-lg lg:text-xl hover:bg-transparent hover:border-primary hover:text-primary hover:transition"
+              >Zur Speisekarte</a
+            >
+          </div>
+          <div class="mt-5 grid grid-cols-2 grid-rows-1">
+            <img
+              class="h-full p-1"
+              src="/src/assets/img/foodHochformat.png"
+              alt="Restaurant mit Gästen"
+            />
+            <div class="">
+              <img class="p-1" src="/src/assets/img/food2.png" alt="" />
+              <img class="p-1" src="/src/assets/img/eingang.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="openings" class="">
+        <div
+          class="bg-openings bg-center bg-cover text-text-nav flex flex-col justify-center items-center py-20"
+        >
+          <h2 class="text-3xl underline decoration-primary">Öffnungszeiten</h2>
+          <div
+            class="openings-container-content w-full md:max-w-185 text-md md:text-lg lg:text-xl"
+          >
+            <p class="w-full flex justify-evenly">
+              <span class="tage">Mo</span><span class="stunde">Ruhetag</span>
+            </p>
+            <p class="w-full flex justify-evenly">
+              <span class="tage">Di</span><span class="stunde">7:00-22:00</span>
+            </p>
+            <p class="w-full flex justify-evenly">
+              <span class="tage">Mi</span><span class="stunde">7:00-22:00</span>
+            </p>
+            <p class="w-full flex justify-evenly">
+              <span class="tage">Do</span><span class="stunde">7:00-22:00</span>
+            </p>
+            <p class="w-full flex justify-evenly">
+              <span class="tage">Fr</span><span class="stunde">7:00-22:00</span>
+            </p>
+            <p class="w-full flex justify-evenly">
+              <span class="tage">Sa</span><span class="stunde">7:00-22:00</span>
+            </p>
+            <p class="w-full flex justify-evenly">
+              <span class="tage">So</span><span class="stunde">7:00-22:00</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="kontakt-container">
+          <img
+            class="kontakt-img"
+            src="/src/assets/img/Restaurant.png"
+            alt="Restaurant bild"
+          />
+          <div class="kontakt-content">
+            <h2 class="section-headline">Kontakt</h2>
+            <p class="section-paragraph">Loremlorem@gmail.com</p>
+            <p class="section-paragraph">(+49) 14569787</p>
+            <p class="section-paragraph">Beispielstrasse 12</p>
+            <p class="section-paragraph">31258 Beispieldorf</p>
+            <div class="kontakt-btn-container">
+              <a class="sectionBtn" href="tel:+49123456789">Jetzt Anrufen</a>
+              <a class="sectionBtn invertiert" href="mailto:adresse@beispiel.de"
+                >Email Schreiben</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="sectionWrapper footter-wrapper">
+        <div class="footer-links-container">
+          <a
+            class="section-link footer-links"
+            href="impressum.html"
+            target="_self"
+            >Impressum</a
+          >
+          <a
+            class="section-link footer-links"
+            href="impressum.html#datenschutzerklärung"
+            target="_self"
+            >Datenschutzerklärung</a
+          >
+          <a class="section-link footer-links" href="jobs.html" target="_self">
+            Jobs</a
+          >
+        </div>
+        <p class="section-paragraph">&copy; 0511 0511Bites</p>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

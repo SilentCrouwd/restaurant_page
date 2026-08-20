@@ -1,1 +1,66 @@
 @import "tailwindcss";
+
+/* --------------------------------------------------------------------------
+   1. Dynamic CSS Variables (Light & Dark via Media Query)
+   -------------------------------------------------------------------------- */
+:root {
+  --color-bg-primary: #fffcfc;
+  --color-primary: blue;
+  --color-secondary: violet;
+  --color-bg-card: #f8fafc;
+  --color-text-main: #0f172a;
+  --color-text-nav: #f1f2f5;
+  --color-text-muted: #64748b;
+  --color-border: #e9d7d7;
+  --color-card-item: rgb(65, 62, 62);
+  /* Automatic Dark Mode (System preference) */
+  @media (prefers-color-scheme: dark) {
+    --color-bg-primary: #0f172a;
+    --color-bg-card: #1e293b;
+    --color-primary: blue;
+    --color-secondary: violet;
+    --color-text-main: #f8fafc;
+    --color-text-nav: #f1f2f5;
+    --color-text-muted: #94a3b8;
+    --color-border: #334155;
+    --color-card-item: gray;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Tailwind v4 Theme Registration
+   -------------------------------------------------------------------------- */
+@theme {
+  /* Generiert Utility-Klassen: bg-bg-primary, text-text-main, etc. */
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-card: var(--color-bg-card);
+  --color-text-main: var(--color-text-main);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-card-item: var(--color-card-item);
+  --color-text-nav: var(--color-text-nav);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --background-image-head-img:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/src/assets/img/menue1.png");
+  --background-image-openings:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/src/assets/img/openingImg.png");
+}
+
+/* --------------------------------------------------------------------------
+   3. Base Styles
+   -------------------------------------------------------------------------- */
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    min-height: 100vh;
+  }
+}
