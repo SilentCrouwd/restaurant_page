@@ -4,7 +4,82 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>restaurant_page</title>
+
+    <!-- Haupt-Meta-Daten -->
+    <title>Bistro 0511Bites | 100% Bio Restaurant in Hannover</title>
+    <meta
+      name="description"
+      content="Willkommen im Bistro 0511Bites in Hannover. Genießen Sie 100% Bio-Qualität, frische Speisen und ein gemütliches Ambiente. Jetzt Speisekarte entdecken!"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://deine-domain.de/" />
+
+    <!-- Open Graph / Facebook & WhatsApp Vorschau -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:url" content="https://deine-domain.de/" />
+    <meta
+      property="og:title"
+      content="Bistro 0511Bites | 100% Bio Restaurant"
+    />
+    <meta
+      property="og:description"
+      content="Frische, biologische Küche in Hannover. Schau dir unsere Speisekarte und Öffnungszeiten an!"
+    />
+    <meta
+      property="og:image"
+      content="https://deine-domain.de/src/assets/img/Restaurant.webp"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Bistro 0511Bites | 100% Bio Restaurant"
+    />
+    <meta
+      name="twitter:description"
+      content="Frische, biologische Küche in Hannover."
+    />
+    <meta
+      name="twitter:image"
+      content="https://deine-domain.de/src/assets/img/Restaurant.webp"
+    />
+
+    <!-- Strukturierte Daten für Google (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Bistro 0511Bites",
+        "image": "https://deine-domain.de/src/assets/img/Restaurant.webp",
+        "telephone": "+4914569787",
+        "email": "Loremlorem@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Beispielstrasse 12",
+          "addressLocality": "Hannover",
+          "postalCode": "31258",
+          "addressCountry": "DE"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "07:00",
+            "closes": "22:00"
+          }
+        ],
+        "servesCuisine": "Bio"
+      }
+    </script>
+
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body class="bg-bg-primary px-2 xl:xl:max-w-350 xl:mx-auto">
