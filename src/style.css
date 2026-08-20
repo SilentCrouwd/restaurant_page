@@ -43,10 +43,10 @@
   --color-secondary: var(--color-secondary);
   --background-image-head-img:
     linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/src/assets/img/menue1.png");
+    url("/src/assets/img/menue1.webp");
   --background-image-openings:
     linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/src/assets/img/openingImg.png");
+    url("/src/assets/img/openingImg.webp");
 }
 
 /* --------------------------------------------------------------------------
