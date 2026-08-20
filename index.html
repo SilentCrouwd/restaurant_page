@@ -7,12 +7,12 @@
     <title>restaurant_page</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body class="bg-bg-primary">
+  <body class="bg-bg-primary px-2 xl:xl:max-w-350 xl:mx-auto">
     <header
       class="flex justify-center border border-border bg-card-item text-text-nav w-full"
     >
       <nav
-        class="w-full navBar flex justify-between text-center text-md md:text-lg md:justify-evenly lg:max-w-250 lg:text-xl"
+        class="navBar w-full flex justify-between text-center text-md md:text-lg md:justify-evenly lg:max-w-250 lg:text-xl"
       >
         <a href="#aboutUs" class="p-5 hover:text-primary"
           ><span>Über Uns</span></a
@@ -25,7 +25,7 @@
         >
       </nav>
     </header>
-    <main>
+    <main class="flex flex-col gap-5">
       <section class="heroSection">
         <div class="h-screen bg-head-img bg-center bg-cover">
           <div
@@ -68,19 +68,19 @@
             <a
               href="speisekarte.html"
               target="_self"
-              class="border border-transparent mt-10 rounded-lg p-3 bg-primary text-lg lg:text-xl hover:bg-transparent hover:border-primary hover:text-primary hover:transition"
+              class="border text-text-nav border-transparent mt-10 rounded-lg p-3 bg-primary text-lg lg:text-xl hover:bg-transparent hover:border-primary hover:text-primary hover:transition"
               >Zur Speisekarte</a
             >
           </div>
-          <div class="mt-5 grid grid-cols-2 grid-rows-1">
+          <div class="mt-5 grid grid-cols-2 grid-rows-1 gap-1">
             <img
-              class="h-full p-1"
+              class="h-full flex gap-1"
               src="/src/assets/img/foodHochformat.png"
               alt="Restaurant mit Gästen"
             />
-            <div class="">
-              <img class="p-1" src="/src/assets/img/food2.png" alt="" />
-              <img class="p-1" src="/src/assets/img/eingang.png" alt="" />
+            <div class="flex flex-col gap-1">
+              <img class="" src="/src/assets/img/food2.png" alt="" />
+              <img class="" src="/src/assets/img/eingang.png" alt="" />
             </div>
           </div>
         </div>
@@ -117,22 +117,34 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="kontakt-container">
+      <section class="lg:max-w-250 lg:mx-auto">
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
           <img
-            class="kontakt-img"
+            class=""
             src="/src/assets/img/Restaurant.png"
             alt="Restaurant bild"
           />
-          <div class="kontakt-content">
-            <h2 class="section-headline">Kontakt</h2>
-            <p class="section-paragraph">Loremlorem@gmail.com</p>
-            <p class="section-paragraph">(+49) 14569787</p>
-            <p class="section-paragraph">Beispielstrasse 12</p>
-            <p class="section-paragraph">31258 Beispieldorf</p>
-            <div class="kontakt-btn-container">
-              <a class="sectionBtn" href="tel:+49123456789">Jetzt Anrufen</a>
-              <a class="sectionBtn invertiert" href="mailto:adresse@beispiel.de"
+          <div class="p-2 mx-auto flex flex-col justify-center gap-5">
+            <div>
+              <h2
+                class="text-xl md:text-2xl lg:text-3xl underline decoration-primary"
+              >
+                Kontakt
+              </h2>
+              <p class="text-md md:text-lg lg:text-xl">Loremlorem@gmail.com</p>
+              <p class="text-md md:text-lg lg:text-xl">(+49) 14569787</p>
+              <p class="text-md md:text-lg lg:text-xl">Beispielstrasse 12</p>
+              <p class="text-md md:text-lg lg:text-xl">31258 Beispieldorf</p>
+            </div>
+            <div class="">
+              <a
+                class="border text-text-nav border-transparent mt-10 rounded-lg p-3 bg-primary text-lg lg:text-xl hover:bg-transparent hover:border-primary hover:text-primary hover:transition"
+                href="tel:+49123456789"
+                >Jetzt Anrufen</a
+              >
+              <a
+                class="border border-primary mt-10 rounded-lg p-3 bg-transparent text-lg lg:text-xl hover:bg-primary hover:border-transparent hover:text-text-nav hover:transition"
+                href="mailto:adresse@beispiel.de"
                 >Email Schreiben</a
               >
             </div>
@@ -140,9 +152,13 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="sectionWrapper footter-wrapper">
-        <div class="footer-links-container">
+    <footer class="bg-card-item h-30 mt-5">
+      <div
+        class="flex flex-col w-full h-full justify-center md:mx-auto md:text-lg lg:max-w-250 lg:text-xl"
+      >
+        <div
+          class="flex justify-evenly text-text-nav hover:text-primary hover:transition"
+        >
           <a
             class="section-link footer-links"
             href="impressum.html"
@@ -159,7 +175,7 @@
             Jobs</a
           >
         </div>
-        <p class="section-paragraph">&copy; 0511 0511Bites</p>
+        <p class="mt-5 mx-auto text-text-muted">&copy; Cb_codes_design</p>
       </div>
     </footer>
 

@@ -5,7 +5,7 @@
    -------------------------------------------------------------------------- */
 :root {
   --color-bg-primary: #fffcfc;
-  --color-primary: blue;
+  --color-primary: rgb(16, 129, 34);
   --color-secondary: violet;
   --color-bg-card: #f8fafc;
   --color-text-main: #0f172a;
